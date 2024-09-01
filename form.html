@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Selection Form</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- Make sure this path is correct -->
+</head>
+<body class="page-background">
+    <div class="form-container">
+        <h1>Data Analyst Selection Form</h1>
+        <form id="selectionForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" required>
+
+            <label for="rollno">College Roll Number:</label>
+            <input type="text" id="rollno" name="rollno" required>
+
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree">
+                <option value="btech">B.Tech</option>
+                <option value="be">B.E</option>
+                <option value="me">M.E</option>
+                <option value="bcom">B.Com</option>
+                <option value="bsc">B.Sc</option>
+                <option value="mca">MCA</option>
+                <option value="ms">MS</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="batch">Batch:</label>
+            <input type="number" id="batch" name="batch" min="1990" max="2027">
+
+            <label for="domain">Domain:</label>
+            <select id="domain" name="domain">
+                <option value="cs">Computer Science</option>
+                <option value="chemical">Chemical Engineering</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="bio">Biotechnology</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="status">Current Status:</label>
+            <select id="status" name="status">
+                <option value="student">Student</option>
+                <option value="developer">Developer</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label for="projects">Projects:</label>
+            <div id="projects-section">
+                <input type="text" name="projects[]" placeholder="Project Title">
+            </div>
+            <button type="button" onclick="addProject()">Add Project</button>
+            <button type="button" onclick="removeProject()">Remove Project</button>
+
+            <label for="experience">Work/Intern Experience:</label>
+            <div id="experience-section">
+                <input type="text" name="experience[]" placeholder="Experience Title">
+            </div>
+            <button type="button" onclick="addExperience()">Add Experience</button>
+            <button type="button" onclick="removeExperience()">Remove Experience</button>
+
+            <label for="certificates">Certificates:</label>
+            <input type="file" id="certificates" name="certificates[]" multiple>
+
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <label for="queries">Any Other Queries:</label>
+            <textarea id="queries" name="queries"></textarea>
+
+            <p class="motivation">"Believe you can and you're halfway there"</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts2.js"></script> <!-- Make sure this path is correct -->
+</body>
+</html>
