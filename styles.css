@@ -1,5 +1,5 @@
 body {
-    background-image: url("I:/5th sem/App Dev/arsha exp _2/1255743-fotor-2024090212013.jpg"); /* Corrected backslashes for file path */
+    background-image: url("1255743-fotor-2024090212013.jpg"); /* Corrected backslashes for file path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
